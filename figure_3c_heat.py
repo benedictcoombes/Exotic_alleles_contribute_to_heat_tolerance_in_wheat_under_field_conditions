@@ -5,7 +5,7 @@ df = pd.read_csv('source_data/fig_3c_heat_source_data.txt', sep="\t")
 df['bar'] = 1.0
 numtraits = len(list(df.iloc[:, 3:]))  #make sure this matched the for loop for iloc positions
 fig, axes = plt.subplots(nrows=numtraits, ncols=1, figsize=(15,8))
-colors = {1:'gainsboro', 2:'gold'}
+colors = {1:'gainsboro', 2:'#800080'}
 count = 0
 for (columnName, columnData) in df.iloc[:, 3:].iteritems():
     print(columnName)
@@ -15,4 +15,4 @@ for (columnName, columnData) in df.iloc[:, 3:].iteritems():
     ax.get_legend().remove()
     ax.set_title(columnName,x=-0.073,y=0.2, fontsize=14, fontweight='bold')
     count += 1
-fig.savefig('hibap_heat_new_6Dallelesplit_gold.png', transparent=True)
+fig.savefig('hibap_heat_new_6Dallelesplit.png', transparent=True)

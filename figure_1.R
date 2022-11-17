@@ -97,7 +97,7 @@ percentage_change_plot <- ggplot(data=dat, aes(x=Trait, y=Percentage_loss, fill=
   coord_flip() +
   theme_classic() +
   labs(x=NULL, y="% change under heat stress vs yield potential") +
-  scale_fill_manual(values = c("#BC3C29FF", "#20854EFF")) +
+  scale_fill_manual(values = c("#BC3C29FF", "royalblue2")) +
   theme(legend.position = "none") +
   geom_hline(yintercept = 0) +
   geom_text(aes(label=Percentage_loss), colour="black", hjust=1.1, size=3) +

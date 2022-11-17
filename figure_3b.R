@@ -100,7 +100,3 @@ plot <- add_sub(plot, "Minor allele combinations at MTAs (6D+1B+2B)", hjust = 0.
 
 ggsave('fig_3b.pdf', plot, height = 7, width = 20)
 
-
-
-res.aov <- aov(value ~ variable, data = melt_dat)
-summary(res.aov)
